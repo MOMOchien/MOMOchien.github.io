@@ -11,7 +11,7 @@ a{
 	text-decoration: none;
 }
 .nav_bar{
-	background-color: lightblue;
+	background-color: black;
 	padding: 0.8rem 0.8rem;
 	display: flex;
 /*	justify-content: space-between;*/
@@ -29,7 +29,7 @@ a{
   	left: 0px;
   	height: 92vh;
   	top: 6.5vh;
-  	background-color: lightblue;
+  	background-color: black;
   	display: flex;
   	flex-direction: column;
   	align-items: center;
@@ -80,7 +80,7 @@ a{
 .nav_bar .nav_login div{
 	border: 2px solid white;
     border-radius: .3em;
-    background-color: lightblue;
+    background-color: black;
     margin: 0 0.3rem;
 }
 
@@ -91,4 +91,16 @@ a{
 .nav_bar .nav_login a{
 	font-size: 1.6rem;
 	padding: 0 0.5rem;
+}
+
+/*------------------------------*/
+
+.home_section{
+	background-image: url("../image/511.jpg");
+	background-color: #ccccc0;
+  	height: 500px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
 }
