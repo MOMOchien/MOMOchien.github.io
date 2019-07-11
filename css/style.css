@@ -13,9 +13,14 @@ a{
 .nav_bar{
 	background-color: black;
 	padding: 0.8rem 0.8rem;
+	height: 50px;
 	display: flex;
 /*	justify-content: space-between;*/
 	align-items: center;
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+  	z-index: 1;
 } 
 
 .nav_bar .nav_rwd{
@@ -28,7 +33,7 @@ a{
   	position: absolute;
   	left: 0px;
   	height: 92vh;
-  	top: 6.5vh;
+  	top: 50px;
   	background-color: black;
   	display: flex;
   	flex-direction: column;
@@ -36,7 +41,7 @@ a{
   	width:50%;
   	transform: translateX(-100%);
   	transition: transform 0.5s ease-in;
-	z-index: 1;
+  	z-index: 1;
   }
 /*  .ul_class li{
   	opacity: 0;
@@ -97,7 +102,7 @@ a{
 /*------------------------------*/
 
 .home_section{
-/* 	background-image: url("../image/511.jpg"); */
+	background-image: url("../image/511.jpg");
 	background-color: #ccccc0;
   	height: 500px;
   	background-position: center;
