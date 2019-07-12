@@ -7,6 +7,9 @@ html{
 	font-size: 10px;
 	font-family: "Roboto Cn", sans-serif;
 }
+body{
+	overflow-x: hidden;
+}
 a{
 	text-decoration: none;
 }
@@ -47,7 +50,7 @@ a{
   	opacity: 0;
   }*/
   .nav_bar .nav_rwd{
-  	flex-grow: 8;
+  	flex: 5;
     display: block;
   }
 }
@@ -61,6 +64,7 @@ a{
 	color: white;
 }
 .nav_bar .nav_logo{
+	flex: 1;
 	margin-right: 0.5rem
 }
 .nav_bar .nav_list a{
@@ -68,7 +72,7 @@ a{
 	padding: 0 0.8rem;
 }
 .nav_bar .nav_list{
-	flex-grow: 8;
+	flex: 5;
 }
 .nav_bar .nav_list ul{
 	display: flex;
@@ -81,13 +85,21 @@ a{
     background-color: lightgray;
 }
 .nav_bar .nav_login{
+	flex: 1;
 	display: flex;
+	justify-content: flex-end;
 }
 .nav_bar .nav_login div{
 	border: 2px solid white;
     border-radius: .3em;
     background-color: black;
     margin: 0 0.3rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 .nav_bar .nav_login div:hover{
@@ -97,11 +109,6 @@ a{
 .nav_bar .nav_login a{
 	font-size: 1.6rem;
 	padding: 0 0.5rem;
-	-webkit-user-select: none; /* Safari */
-       	-moz-user-select: none; /* Firefox */
-        -ms-user-select: none; /* Internet Explorer/Edge */
-        user-select: none; /* Non-prefixed version, currently
-                                  supported by Chrome and Opera */
 }
 
 /*------------------------------*/
@@ -114,4 +121,9 @@ a{
   	background-repeat: no-repeat;
   	background-size: cover;
   	position: relative;
+
+  	-webkit-user-select: none;
+    	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
 }
