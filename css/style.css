@@ -3,6 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 }
+<<<<<<< HEAD
 
 html{
 	font-size: 16px;
@@ -12,10 +13,30 @@ html{
 .container{
 	background-color: black;
 	background-color: black;
+=======
+html{
+	font-size: 10px;
+	font-family: "Roboto Cn", sans-serif;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+}
+.nav_bar{
+	background-color: black;
+	padding: 0.8rem 0.8rem;
+	height: 50px;
+	display: flex;
+/*	justify-content: space-between;*/
+	align-items: center;
+>>>>>>> b8c6016c45d23d0dfb710a1c9645f1a9bde084f5
 	position: -webkit-sticky; /* Safari */
   	position: sticky;
   	top: 0;
   	z-index: 1;
+<<<<<<< HEAD
 }
 nav{
 	display: flex;
@@ -147,3 +168,108 @@ nav{
 
 
 
+=======
+} 
+
+.nav_bar .nav_rwd{
+	margin: 0 0.8rem;
+	display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .ul_class{
+  	position: absolute;
+  	left: 0px;
+  	height: 92vh;
+  	top: 50px;
+  	background-color: black;
+  	display: flex;
+  	flex-direction: column;
+  	align-items: center;
+  	width:50%;
+  	transform: translateX(-100%);
+  	transition: transform 0.5s ease-in;
+  	z-index: 1;
+  }
+/*  .ul_class li{
+  	opacity: 0;
+  }*/
+  .nav_bar .nav_rwd{
+  	flex: 5;
+    display: block;
+  }
+}
+.ul-active{
+	transform: translateX(0%);
+}
+
+.nav_bar a{
+	font-size: 2.4rem;
+	/*text-transform: uppercase;*/
+	color: white;
+}
+.nav_bar .nav_logo{
+	flex: 1;
+	margin-right: 0.5rem
+}
+.nav_bar .nav_list a{
+	font-size: 1.6rem;
+	padding: 0 0.8rem;
+}
+.nav_bar .nav_list{
+	flex: 5;
+}
+.nav_bar .nav_list ul{
+	display: flex;
+	list-style: none;
+}
+.nav_bar .nav_list ul li{
+}
+.nav_bar .nav_list ul li a:hover, .nav_bar .nav_list ul li a:focus{
+    border-radius: .8em;
+    background-color: lightgray;
+}
+.nav_bar .nav_login{
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.nav_bar .nav_login div{
+	border: 2px solid white;
+    border-radius: .3em;
+    background-color: black;
+    margin: 0 0.3rem;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
+}
+
+.nav_bar .nav_login div:hover{
+	background-color: lightgray;
+}
+
+.nav_bar .nav_login a{
+	font-size: 1.6rem;
+	padding: 0 0.5rem;
+}
+
+/*------------------------------*/
+
+.home_section{
+	background-image: url("../image/511.jpg");
+	background-color: #ccccc0;
+  	height: 500px;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+
+  	-webkit-user-select: none;
+    	-moz-user-select: none;
+   	-ms-user-select: none;
+   	user-select: none;
+}
+>>>>>>> b8c6016c45d23d0dfb710a1c9645f1a9bde084f5
