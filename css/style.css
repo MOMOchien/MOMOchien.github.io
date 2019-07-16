@@ -1,0 +1,149 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html{
+	font-size: 16px;
+	font-family: "Roboto Cn", sans-serif;
+}
+/*Navigation Bar CSS*/
+.container{
+	background-color: black;
+	background-color: black;
+	position: -webkit-sticky; /* Safari */
+  	position: sticky;
+  	top: 0;
+  	z-index: 1;
+}
+nav{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	max-width: 90%;
+	margin: 0 auto;
+	height: 50px;
+/*  	border-left: 50px solid black;
+  	border-right: 50px solid black;*/
+}
+.burger{
+	display: none;
+}
+.burger div{
+	background-color: white;
+	width: 25px;
+	height: 5px;
+	margin: 5px;
+}
+.nav_logo a{
+	color: white;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 1.5rem;
+}
+.nav_list{
+	display: flex;
+	justify-content: space-around;
+	list-style: none;
+	width: 40%;
+}
+.nav_list a{
+	color: white;
+	letter-spacing: 0.1rem;
+	text-decoration: none;
+}
+.nav_register a{
+	color: white;
+	text-decoration: none;
+}
+.nav_logo a:hover,
+.nav_list a:hover,
+.nav_register a:hover{
+	color: gray;
+	transition: 0.2s;
+}
+.burger:hover div{
+	background-color: gray;
+	transition: 0.2s;
+}
+
+@media screen and (max-width: 750px) {
+	nav{
+		max-width: 100%;
+		margin: 0;
+/*		border-left: 0px;
+  		border-right: 0px;*/
+	}
+	.burger{
+		display: block;
+	}
+	.burger-active .line1{
+		transform: rotate(-45deg) translate(-2px, 5px);
+		transition: 0.2s;
+	}
+	.burger-active .line2{
+		transform: rotate(45deg) translate(-2px, -5px);;
+		transition: 0.2s;
+	}
+	.nav_list{
+		position: absolute;
+		top: 50px;
+		width: 100%;
+		height:calc(100vh - 50px);/*%,vh may effect nav_list background color disppear*/
+		background-color: black;
+		display: block;
+		text-align: center;
+
+		left: -100%;
+		transition: 0.5s;
+	}
+
+	.nav_list-active{
+		left: 0;
+	}
+	.nav_list a{
+		padding: 10px;
+		display: block;
+		border-bottom: 1px solid white;
+
+	}
+	.nav_list a:hover{
+		color: white;
+		transition: 0.2s;
+		background-color: gray;
+	}
+}
+
+/*Home Page CSS------*/
+/*.home_page .title_section{
+	background-image: url("../image/511.jpg");
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	position: relative;
+}*/
+.home_page div{
+	width: 100%;
+	height: 500px;
+	z-index: -1;
+}
+
+.title_section,
+.work_section{
+	position: relative;
+	background-image: url("../image/511.jpg");
+	background-color: #ccccc0;
+	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+.about_section,
+.contact_section{
+	background-color: transparent;
+}
+
+
+
+
